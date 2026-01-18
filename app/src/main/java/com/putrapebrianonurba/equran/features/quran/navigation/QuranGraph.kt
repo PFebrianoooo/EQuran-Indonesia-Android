@@ -35,10 +35,10 @@ fun NavGraphBuilder.quranGraph(navHostController: NavHostController) {
         composable(
             route = QuranRoute.Feed.route,
             enterTransition = {
-                fadeIn(animationSpec = tween(200))
+                fadeIn(animationSpec = tween(ANIMATION_DURATION))
             },
             exitTransition = {
-                fadeOut(animationSpec = tween(200))
+                fadeOut(animationSpec = tween(ANIMATION_DURATION))
             }
         ) {
             val viewModel: QuranFeedViewModel = hiltViewModel()
@@ -76,9 +76,6 @@ fun NavGraphBuilder.quranGraph(navHostController: NavHostController) {
 
         composable(
             route = QuranRoute.SurahSearched.route,
-            enterTransition = { null },
-            exitTransition = { null },
-            popEnterTransition ={ null },
             popExitTransition = {
                 slideOutOfContainer(
                     towards = SlideDirection.Right,
@@ -114,8 +111,6 @@ fun NavGraphBuilder.quranGraph(navHostController: NavHostController) {
                     animationSpec = tween(ANIMATION_DURATION)
                 )
             },
-            exitTransition = { null },
-            popEnterTransition = { null },
             popExitTransition = {
                 slideOutOfContainer(
                     towards = SlideDirection.Right,

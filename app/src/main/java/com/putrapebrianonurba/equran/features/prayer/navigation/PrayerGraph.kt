@@ -24,10 +24,10 @@ fun NavGraphBuilder.prayerGraph(navHostController: NavHostController) {
         composable(
             route = PrayerRoute.FEED.route,
             enterTransition = {
-                fadeIn(animationSpec = tween(200))
+                fadeIn(animationSpec = tween(ANIMATION_DURATION))
             },
             exitTransition = {
-                fadeOut(animationSpec = tween(200))
+                fadeOut(animationSpec = tween(ANIMATION_DURATION))
             }
         ) {
             val viewModel: PrayerFeedViewModel = hiltViewModel()

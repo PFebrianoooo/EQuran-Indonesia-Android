@@ -30,10 +30,10 @@ fun NavGraphBuilder.duaGraph(navHostController: NavHostController) {
         composable(
             route = DuaRoute.Feed.route,
             enterTransition = {
-                fadeIn(animationSpec = tween(200))
+                fadeIn(animationSpec = tween(ANIMATION_DURATION))
             },
             exitTransition = {
-                fadeOut(animationSpec = tween(200))
+                fadeOut(animationSpec = tween(ANIMATION_DURATION))
             }
         ) {
             DuaFeedScreen(
@@ -54,8 +54,6 @@ fun NavGraphBuilder.duaGraph(navHostController: NavHostController) {
                     animationSpec = tween(ANIMATION_DURATION)
                 )
             },
-            exitTransition = { null },
-            popEnterTransition = { null },
             popExitTransition = {
                 slideOutOfContainer(
                     towards = SlideDirection.Right,

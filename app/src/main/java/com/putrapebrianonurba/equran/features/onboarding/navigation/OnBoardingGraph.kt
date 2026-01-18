@@ -19,7 +19,7 @@ fun NavGraphBuilder.onBoardingGraph(navHostController: NavHostController) {
         composable(
             route = OnBoardingRoute.WELCOME.route,
             exitTransition = {
-                fadeOut(animationSpec = tween(300))
+                fadeOut(animationSpec = tween(400))
             }
         ) {
             val viewModel: OnboardingViewModel = hiltViewModel()
