@@ -47,5 +47,5 @@ object AppConstants {
     const val DUAS_TEST_TITLE = "Hafalan Doa\nSehari-Hari"
     const val DUAS_TEST_INFORMATION_TITLE = "Coba Bacakan\n"
     const val DUAS_TEST_ANSWER_TITLE = "Jawaban"
-    const val DUAS_TEST_REFRESH_TITLE = "Jawaban"
+    const val DUAS_TEST_REFRESH_TITLE = "Perbarui"
 }
