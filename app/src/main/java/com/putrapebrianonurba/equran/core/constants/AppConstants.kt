@@ -25,6 +25,7 @@ object AppConstants {
     )
 
     // SETTINGS
+    const val APP_VERSION = "Versi 1.0"
     const val SETTINGS_TITLE = "Pengaturan"
     const val SETTINGS_APPLICATION_TITLE = "Pengaturan Aplikasi"
     const val SETTINGS_APPLICATION_THEME_TITLE = "Tema Gelap"

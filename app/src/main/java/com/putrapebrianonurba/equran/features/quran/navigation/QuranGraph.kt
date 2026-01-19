@@ -111,6 +111,12 @@ fun NavGraphBuilder.quranGraph(navHostController: NavHostController) {
                     animationSpec = tween(ANIMATION_DURATION)
                 )
             },
+            exitTransition = {
+                fadeOut(animationSpec = tween(ANIMATION_DURATION))
+            },
+            popEnterTransition = {
+                fadeIn(animationSpec = tween(ANIMATION_DURATION))
+            },
             popExitTransition = {
                 slideOutOfContainer(
                     towards = SlideDirection.Right,

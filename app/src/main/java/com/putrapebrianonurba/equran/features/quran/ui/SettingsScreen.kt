@@ -31,7 +31,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
-import com.putrapebrianonurba.equran.R
 import com.putrapebrianonurba.equran.core.common.redirectOpenUrl
 import com.putrapebrianonurba.equran.core.components.IconButton
 import com.putrapebrianonurba.equran.core.components.NavigationTopBar
@@ -145,7 +144,7 @@ fun SettingsScreen(
         }
 
         Text(
-            text = R.string.app_version.toString(),
+            text = AppConstants.APP_VERSION,
             style = MaterialTheme.typography.bodySmall,
             color = MaterialTheme.colorScheme.secondary,
             modifier = Modifier
